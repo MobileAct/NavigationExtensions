@@ -1,0 +1,18 @@
+ext {
+
+    kotlinVersion = '1.3.41'
+    navigationVersion = '2.1.0-alpha06'
+
+    libraries = [
+            kotlinStdlib      : "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion",
+            core              : 'androidx.core:core-ktx:1.0.2',
+            appcompat         : 'androidx.appcompat:appcompat:1.0.2',
+            fragment          : 'androidx.fragment:fragment:1.0.0',
+            navigationRuntime : "androidx.navigation:navigation-runtime:$navigationVersion",
+            navigationFragment: "androidx.navigation:navigation-fragment-ktx:$navigationVersion",
+            junit             : 'junit:junit:4.12',
+            testRunner        : 'androidx.test:runner:1.2.0',
+            testRule          : 'androidx.test:rules:1.2.0',
+            testEspresso      : 'androidx.test.espresso:espresso-core:3.2.0'
+    ]
+}

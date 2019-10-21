@@ -1,0 +1,1 @@
+include ':app', ':navext-activity-result', ':navext-activity-request', ':navext-fragment', ':navext-fragment-styled'

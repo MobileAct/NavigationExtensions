@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Screen">
+        <item name="title"/>
+        <item name="description"/>
+    </style>
+
+    <style name="Screen.Route1.First" parent="Screen">
+        <item name="title">Route1 First</item>
+        <item name="description">Rout1 First Description</item>
+    </style>
+
+    <style name="Screen.Route1.Second" parent="Screen">
+        <item name="title">Route1 Second</item>
+        <item name="description">Rout1 Second Description</item>
+    </style>
+
+    <style name="Screen.Route1.Third" parent="Screen">
+        <item name="title">Route1 Third</item>
+        <item name="description">Rout1 Third Description</item>
+    </style>
+
+    <style name="Screen.Route2.First" parent="Screen">
+        <item name="title">Route2 First</item>
+        <item name="description">Rout2 First Description</item>
+    </style>
+
+    <style name="Screen.Route2.Second" parent="Screen">
+        <item name="title">Route2 Second</item>
+        <item name="description">Rout2 Second Description</item>
+    </style>
+</resources>

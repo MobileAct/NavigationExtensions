@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FragmentStyledNavigator">
+        <attr name="android:name"/>
+        <attr format="reference" name="style"/>
+        <attr format="reference" name="nextId"/>
+    </declare-styleable>
+</resources>

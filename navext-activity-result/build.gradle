@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    sourceSets.all { java.srcDirs += "src/$name/kotlin" }
+}
+
+dependencies {
+    api libraries.kotlinStdlib
+    api libraries.appcompat
+    api libraries.navigationRuntime
+
+    testImplementation libraries.junit
+
+    androidTestImplementation libraries.testRunner
+    androidTestImplementation libraries.testEspresso
+}

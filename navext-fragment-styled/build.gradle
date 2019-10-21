@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    sourceSets.all { java.srcDirs += "src/$name/kotlin" }
+}
+
+dependencies {
+    implementation libraries.kotlinStdlib
+    implementation libraries.core
+    implementation libraries.navigationFragment
+
+    testImplementation libraries.junit
+
+    androidTestImplementation libraries.testRunner
+    androidTestImplementation libraries.testRule
+    androidTestImplementation libraries.testEspresso
+}
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+    kotlinOptions.freeCompilerArgs += ["-XXLanguage:+InlineClasses"]
+}

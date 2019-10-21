@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ActivityRequestNavigator">
+        <attr name="android:name"/>
+        <attr name="action" format="string"/>
+        <attr name="request" format="integer"/>
+    </declare-styleable>
+</resources>

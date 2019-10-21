@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@+id/navigation_main"
+            app:startDestination="@id/startFragment"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="navext.app.StartFragment">
+        <action
+            android:id="@+id/transitionToRoute1First"
+            app:destination="@+id/route1First"/>
+        <action
+            android:id="@+id/transitionToRoute2First"
+            app:destination="@id/route2First"/>
+    </fragment>
+
+    <fragment-styled
+        android:id="@+id/route1First"
+        android:name="navext.app.ScreenFragment"
+        app:nextId="@id/transitionToRoute1Second"
+        app:style="@style/Screen.Route1.First">
+        <action
+            android:id="@+id/transitionToRoute1Second"
+            app:destination="@+id/route1Second"/>
+    </fragment-styled>
+
+    <fragment-styled
+        android:id="@+id/route1Second"
+        android:name="navext.app.ScreenFragment"
+        app:nextId="@id/transitionToRoute1Third"
+        app:style="@style/Screen.Route1.Second">
+        <action
+            android:id="@+id/transitionToRoute1Third"
+            app:destination="@id/route1Third"/>
+    </fragment-styled>
+
+    <fragment-styled
+        android:id="@+id/route1Third"
+        android:name="navext.app.ScreenFragment"
+        app:style="@style/Screen.Route1.Third"/>
+
+    <fragment-styled
+        android:id="@+id/route2First"
+        android:name="navext.app.ScreenFragment"
+        app:nextId="@id/transitionToRoute2Second"
+        app:style="@style/Screen.Route2.First">
+        <action
+            android:id="@+id/transitionToRoute2Second"
+            app:destination="@id/route2Second"/>
+    </fragment-styled>
+
+    <fragment-styled
+        android:id="@+id/route2Second"
+        android:name="navext.app.ScreenFragment"
+        app:style="@style/Screen.Route2.Second"/>
+
+</navigation>

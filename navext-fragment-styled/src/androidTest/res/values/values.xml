@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Screen">
+        <attr format="string" name="title"/>
+    </declare-styleable>
+
+    <style name="Screen1">
+        <item name="title">Title1</item>
+    </style>
+
+    <style name="Screen2">
+        <item name="title">Title2</item>
+    </style>
+</resources>

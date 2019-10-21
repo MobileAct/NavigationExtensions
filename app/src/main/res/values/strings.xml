@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NavigationExtensions</string>
+
+    <string name="route1">Route1</string>
+    <string name="route2">Route2</string>
+    <string name="next">Next</string>
+</resources>
