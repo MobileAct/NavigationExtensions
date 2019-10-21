@@ -1,6 +1,8 @@
 # NavigationExtensions
 navex is extension for AndroidX Navigation.
 
+**This repository is not published to Maven.** It may be released if there are many requests.
+
 ## Summary
 navex provides some extensions
 
